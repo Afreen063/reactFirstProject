@@ -69,7 +69,7 @@ document.getElementById("root").append(element);*/
 
 const element = <h1 className="headers">hello everyone</h1>
 console.log(element);
-//ReactDOM.render(element,document.getElementById("root"))
+ReactDOM.render(element,document.getElementById("root"))
 
 //jsx basically a function that return object that react can interpret and create element.
 
@@ -96,5 +96,8 @@ const nav=(
         </nav>
     </div>
 )
-//ReactDOM.render(nav,document.getElementById("root"))
-document.getElementById("root").append(nav)
+ReactDOM.render(nav,document.getElementById("root"))
+//document.getElementById("root").append(JSON.stringify(nav))//it print [obj obj] without using json.stringfy
+
+
+//
