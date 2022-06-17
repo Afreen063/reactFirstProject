@@ -10,7 +10,7 @@
 </ul>, document.getElementById("root"));
 */
 // we can also add unordered list .
-function NavBar()
+/*function NavBar()
 {
     return (
         <nav class="navbar navbar-expand-lg bg-light">
@@ -56,4 +56,45 @@ ReactDOM.render(
     <div>
         <NavBar />
     </div>, document.getElementById("root")
-)//<NavBar is the function name that return navbar html page   
+)*///<NavBar is the function name that return navbar html page   
+
+/*var element = document.createElement("h1");
+element.innerText="hi everyone";
+element.className="headers";
+document.getElementById("root").append(element);*/
+// using dom added html file
+
+//in single line
+//ReactDOM.render(<h1 className="headers">Hello everyone</h1>,document.getElementById("root"));
+
+const element = <h1 className="headers">hello everyone</h1>
+console.log(element);
+//ReactDOM.render(element,document.getElementById("root"))
+
+//jsx basically a function that return object that react can interpret and create element.
+
+//we can only render 1 parent in the reactDOM. 
+
+//ReactDOM.render(<h1></h1><p></p>,document.getElementById("root")) it will through error
+const v=(<div>
+    <h1>hi everyone</h1>
+    <p>byyeee</p>
+</div>)
+
+//ReactDOM.render(v
+//, document.getElementById("root"));
+
+const nav=(
+    <div>
+        <nav>
+        <h1>Websites</h1>
+        <ul>
+            <li>pricing</li>
+            <li>contact</li>
+            <li>about</li>
+        </ul>
+        </nav>
+    </div>
+)
+//ReactDOM.render(nav,document.getElementById("root"))
+document.getElementById("root").append(nav)
