@@ -35,8 +35,13 @@ function Footer()
 function Header(){
   return(
     <header>
-    <nav>
-      <img src ="https://tse2.mm.bing.net/th?id=OIP.8MEfXloFsCOJm3CezNPBcAHaGm&pid=Api&P=0&w=196&h=174" width="100px"></img>
+    <nav className="nav">
+      <img src ="https://tse2.mm.bing.net/th?id=OIP.8MEfXloFsCOJm3CezNPBcAHaGm&pid=Api&P=0&w=196&h=174" width="50px"/>
+    <ul className="nav-item">
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
     </nav>
     </header>
   )
