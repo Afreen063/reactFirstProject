@@ -1,3 +1,18 @@
+function Header(){
+  return(
+    <header>
+    <nav className="nav">
+      <img src ="https://tse2.mm.bing.net/th?id=OIP.8MEfXloFsCOJm3CezNPBcAHaGm&pid=Api&P=0&w=196&h=174" width="50px"/>
+    <ul className="nav-item">
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    </nav>
+    </header>
+  )
+}
+
 function Page(){
 
   return (
@@ -8,6 +23,8 @@ function Page(){
   </div>
 )
 }
+
+
 function Main()
 {
   return (
@@ -32,20 +49,7 @@ function Footer()
   )
 }
 
-function Header(){
-  return(
-    <header>
-    <nav className="nav">
-      <img src ="https://tse2.mm.bing.net/th?id=OIP.8MEfXloFsCOJm3CezNPBcAHaGm&pid=Api&P=0&w=196&h=174" width="50px"/>
-    <ul className="nav-item">
-      <li>Pricing</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-    </nav>
-    </header>
-  )
-}
+
 
 ReactDOM.render(<Page />,document.getElementById("root"));
 
